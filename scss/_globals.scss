@@ -1,0 +1,59 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+    line-height: 1;
+}
+
+//Default the anchor tag
+a {
+    text-decoration: none;
+    color: $grayishBlue;
+}
+
+//Height for nav
+
+.nav-height {
+    
+    //Desktop
+    height: 80px;
+}
+
+//Padding for right-left nav
+
+.nav-padding {
+    padding: 0 1.375rem;
+}
+
+//Flexbox
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+    
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+
+    &-col {
+        flex-direction: column;
+    }
+}
