@@ -1,0 +1,65 @@
+
+
+.hero {
+    &__image {
+        
+            position: relative;
+            bottom: 132px;
+            z-index: -1;
+            margin-bottom: -132px;
+            grid-area: image;
+            img {
+                max-width: 370px;
+            }
+        
+    }
+
+    &__text {
+        text-align: center;
+        
+        gap: 22px;
+        padding: 2.1875rem 2.1875rem 0 2.1875rem;
+        grid-area: text;
+        h1 {
+            font-weight: 500;
+            font-size: 2.4rem;
+            max-width: 300px;
+            color: $darkBlue;
+            
+        }
+    }
+}
+
+//Medias
+@media (min-width: 64em){
+    section {
+        .container {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "text image" ;
+        }
+        .hero {
+
+            &__image {
+                position: relative;
+                ;
+                img {
+                    width: 100%;
+                    max-width: 615px;
+                }
+            }
+
+            &__text {
+                justify-content: center;
+                align-items: center;
+                text-align: left;
+                padding: 0 10.3125rem;
+                h1 {
+                    width: 500px;
+                }
+            }
+        }
+    }
+   }
+ 
