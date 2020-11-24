@@ -146,6 +146,11 @@ button:hover {
   color: #2d314d;
 }
 
+.hero__text p {
+  line-height: 1.5;
+  opacity: 60%;
+}
+
 @media (min-width: 64em) {
   section .container {
     display: -ms-grid;
@@ -158,18 +163,22 @@ button:hover {
   }
   section .hero__image {
     position: relative;
+    background-color: red;
+    min-height: 658px;
   }
   section .hero__image img {
-    width: 100%;
-    max-width: 615px;
+    position: absolute;
+    top: 12px;
+    left: 178px;
+    max-width: 700px;
   }
   section .hero__text {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     text-align: left;
     padding: 0 10.3125rem;
   }

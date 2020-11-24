@@ -27,6 +27,10 @@
             color: $darkBlue;
             
         }
+        p {
+            line-height: 1.5;
+            opacity: 60%;
+        }
     }
 }
 
@@ -40,24 +44,30 @@
             grid-template-areas: "text image" ;
         }
         .hero {
-
+                
             &__image {
                 position: relative;
+                background-color: red;
+                min-height: 658px;
                 ;
                 img {
-                    width: 100%;
-                    max-width: 615px;
+                    
+                    position: absolute;
+                    top: 12px;
+                    left: 178px;
+                    max-width: 700px;
                 }
             }
 
             &__text {
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
                 text-align: left;
                 padding: 0 10.3125rem;
                 h1 {
                     width: 500px;
                 }
+                
             }
         }
     }
