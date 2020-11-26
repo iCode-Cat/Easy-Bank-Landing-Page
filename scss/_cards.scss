@@ -1,0 +1,31 @@
+
+//Grid
+.profile-grid {
+    display: grid;
+    background-color: $lightGrayishBlue;
+    //Make grid column 4 ,1fr for web 
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding-bottom: 4.0625rem;
+    }
+
+.cards {
+
+    margin-top: 3.5625rem;
+    text-align: center;
+    gap: 27px;
+    padding: 0 2.1875rem;
+
+    .profile {
+        border-radius: 50%;
+        width: 66px;
+        height: 66px;
+        background-color: $limeGreen;
+    }
+
+    p:last-child{
+        opacity: 60%;
+        line-height: 1.5;
+        
+    }
+}

@@ -60,15 +60,16 @@ a {
 
 //max-width
 .pd-gl {
-    padding: 0 2.1875rem;
+    
 }
 
 
 //title
 .title {
-    padding-top: 8.125rem;
+    padding: 0 2.1875rem;
+    padding-top: 4.0625rem;
     text-align: center;
-
+    background-color: $lightGrayishBlue;
     h1 {
         font-size: 1.6875rem;
         font-weight: 500;

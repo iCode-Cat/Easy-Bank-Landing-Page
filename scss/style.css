@@ -61,13 +61,11 @@ a {
           flex-direction: column;
 }
 
-.pd-gl {
-  padding: 0 2.1875rem;
-}
-
 .title {
-  padding-top: 8.125rem;
+  padding: 0 2.1875rem;
+  padding-top: 4.0625rem;
   text-align: center;
+  background-color: #f3f4f6;
 }
 
 .title h1 {
@@ -141,6 +139,10 @@ button:hover {
   }
 }
 
+.hero {
+  padding-bottom: 4.0625rem;
+}
+
 .hero__image {
   position: relative;
   bottom: 132px;
@@ -206,5 +208,35 @@ button:hover {
   section .hero__text h1 {
     width: 500px;
   }
+}
+
+.profile-grid {
+  display: -ms-grid;
+  display: grid;
+  background-color: #f3f4f6;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  padding-bottom: 4.0625rem;
+}
+
+.cards {
+  margin-top: 3.5625rem;
+  text-align: center;
+  gap: 27px;
+  padding: 0 2.1875rem;
+}
+
+.cards .profile {
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  background-color: #31d35c;
+}
+
+.cards p:last-child {
+  opacity: 60%;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */
