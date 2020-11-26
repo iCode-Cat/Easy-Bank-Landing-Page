@@ -42,15 +42,13 @@
             display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: 1fr 1fr;
-            grid-template-areas: "text image" ;
-            background-color: red;
-        }
+            grid-template-areas: "text image" ;       }
         .hero {
                 
             &__image {
                 position: relative;
                 min-height: 658px;
-                
+                z-index: 999;
                 img {
                     
                     position: absolute;

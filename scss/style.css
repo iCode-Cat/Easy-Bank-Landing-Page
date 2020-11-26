@@ -61,25 +61,6 @@ a {
           flex-direction: column;
 }
 
-.title {
-  padding: 0 2.1875rem;
-  padding-top: 4.0625rem;
-  text-align: center;
-  background-color: #f3f4f6;
-}
-
-.title h1 {
-  font-size: 1.6875rem;
-  font-weight: 500;
-  color: #2d314d;
-}
-
-.title p {
-  padding-top: 1.375rem;
-  line-height: 1.5;
-  opacity: 60%;
-}
-
 .hamburger-menu {
   width: 22px;
   height: 10px;
@@ -92,6 +73,8 @@ a {
 }
 
 nav {
+  position: relative;
+  z-index: 99999;
   background-color: #fff;
 }
 
@@ -183,11 +166,11 @@ button:hover {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "text image";
-    background-color: red;
   }
   section .hero__image {
     position: relative;
     min-height: 658px;
+    z-index: 999;
   }
   section .hero__image img {
     position: absolute;
@@ -210,14 +193,33 @@ button:hover {
   }
 }
 
+.title {
+  padding: 0 2.1875rem;
+  padding-top: 4.0625rem;
+  text-align: center;
+  background-color: #f3f4f6;
+}
+
+.title h1 {
+  font-size: 1.6875rem;
+  font-weight: 500;
+  color: #2d314d;
+}
+
+.title p {
+  padding-top: 1.375rem;
+  line-height: 1.5;
+  opacity: 60%;
+}
+
 .profile-grid {
   display: -ms-grid;
   display: grid;
   background-color: #f3f4f6;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[0];
+      grid-template-rows: repeat(0, 1fr);
   padding-bottom: 4.0625rem;
 }
 
@@ -238,5 +240,37 @@ button:hover {
 .cards p:last-child {
   opacity: 60%;
   line-height: 1.5;
+}
+
+@media (min-width: 64em) {
+  .profile-grid {
+    width: 100%;
+    gap: 25px;
+    padding: 0 10.3125rem;
+    padding-bottom: 6.8125rem;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .profile-grid .card {
+    max-width: 254px;
+  }
+  .cards, .title {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: unset;
+    padding: 0;
+  }
+  .title {
+    padding-right: 10.3125rem;
+    padding-left: 10.3125rem;
+    padding-top: 6.8125rem;
+  }
+  .title p {
+    max-width: 617px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

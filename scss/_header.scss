@@ -12,6 +12,8 @@
 }
 
 nav {
+    position: relative;
+    z-index: 99999;
     .navs {
         height: 100%;
         gap: 2.0625rem;
