@@ -61,6 +61,10 @@ a {
           flex-direction: column;
 }
 
+.pd-gl {
+  padding: 0 2.1875rem;
+}
+
 .hamburger-menu {
   width: 22px;
   height: 10px;
@@ -160,16 +164,16 @@ button:hover {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "text image";
+    background-color: red;
   }
   section .hero__image {
     position: relative;
-    background-color: red;
     min-height: 658px;
   }
   section .hero__image img {
     position: absolute;
     top: 12px;
-    left: 178px;
+    width: 100%;
     max-width: 700px;
   }
   section .hero__text {
