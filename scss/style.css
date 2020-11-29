@@ -326,4 +326,18 @@ button:hover {
 .articles .card-text {
   padding-bottom: 2.625rem;
 }
+
+@media (min-width: 64em) {
+  .article-card-holder {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .articles {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 /*# sourceMappingURL=style.css.map */

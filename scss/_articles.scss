@@ -49,10 +49,20 @@
     }
 }
 
+@media (min-width: 64em){
+    .article-card-holder {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
 
+    .articles {
+        align-items: flex-start;
+    }
+
+ }
 // padding: 0 10.3125rem;
 //     padding-top: 6.125rem;
 //     h1{
 //         font-size: 1.8rem;
 //         font-weight: 400;
-//         co
+//         }
