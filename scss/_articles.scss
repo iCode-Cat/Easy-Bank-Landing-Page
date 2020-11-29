@@ -1,0 +1,55 @@
+.articles {
+    
+    background-color: $veryLightGray;
+    padding: 0 2.1875rem;
+    padding-top: 4.0625rem;
+    
+    .art-title{
+        font-size: 1.4375rem;
+        padding-bottom: 2.25rem;
+        font-weight: 400;
+        color: $darkBlue;
+        
+    }
+
+    &-image {
+        width: 100%;
+        
+        
+    }
+    .by {
+        font-size: 1rem;
+        padding-top: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    p{
+        opacity: 60%;
+    }
+
+    .article-text {
+        line-height: 1.2;
+        background-color: #fff;
+        display: grid;
+        gap: 15px;
+        padding: 0 1.875rem;
+    }
+    .card-title {
+        font-weight: 300;
+    }
+
+    .article-card-holder {
+        display: grid;
+        gap: 22px;
+    }
+}
+
+
+// padding: 0 10.3125rem;
+//     padding-top: 6.125rem;
+//     h1{
+//         font-size: 1.8rem;
+//         font-weight: 400;
+//         co

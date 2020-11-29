@@ -273,4 +273,53 @@ button:hover {
     max-width: 617px;
   }
 }
+
+.articles {
+  background-color: #fafafa;
+  padding: 0 2.1875rem;
+  padding-top: 4.0625rem;
+}
+
+.articles .art-title {
+  font-size: 1.4375rem;
+  padding-bottom: 2.25rem;
+  font-weight: 400;
+  color: #2d314d;
+}
+
+.articles-image {
+  width: 100%;
+}
+
+.articles .by {
+  font-size: 1rem;
+  padding-top: 0.9rem;
+}
+
+.articles h1 {
+  font-size: 1.5rem;
+}
+
+.articles p {
+  opacity: 60%;
+}
+
+.articles .article-text {
+  line-height: 1.2;
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+  padding: 0 1.875rem;
+}
+
+.articles .card-title {
+  font-weight: 300;
+}
+
+.articles .article-card-holder {
+  display: -ms-grid;
+  display: grid;
+  gap: 22px;
+}
 /*# sourceMappingURL=style.css.map */
