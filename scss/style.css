@@ -322,4 +322,8 @@ button:hover {
   display: grid;
   gap: 22px;
 }
+
+.articles .card-text {
+  padding-bottom: 2.625rem;
+}
 /*# sourceMappingURL=style.css.map */
