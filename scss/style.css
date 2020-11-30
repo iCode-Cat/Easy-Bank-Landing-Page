@@ -135,6 +135,7 @@ button:hover {
 }
 
 .hero__image img {
+  width: 100%;
   max-width: 370px;
 }
 
@@ -335,9 +336,14 @@ button:hover {
         grid-template-rows: 1fr;
   }
   .articles {
+    padding: 0 10.3125rem;
+    padding-top: 6.125rem;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .art-title {
+    font-size: 2.25rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
