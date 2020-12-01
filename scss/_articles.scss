@@ -3,6 +3,8 @@
     background-color: $veryLightGray;
     padding: 0 2.1875rem;
     padding-top: 4.0625rem;
+    padding-bottom: 5.0625rem;
+    
     
     .art-title{
         font-size: 1.4375rem;
@@ -47,6 +49,8 @@
     .card-text {
         padding-bottom: 2.625rem;
     }
+
+    
 }
 
 @media (min-width: 64em){
@@ -61,6 +65,7 @@
     .articles {
         padding: 0 10.3125rem;
         padding-top: 6.125rem;
+        padding-bottom: 5.0625rem;
         align-items: flex-start;
     }
     .art-title {
@@ -74,3 +79,4 @@
 //         font-size: 1.8rem;
 //         font-weight: 400;
 //         }
+
