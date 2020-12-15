@@ -2,6 +2,7 @@ html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *, *::before, *::after {
@@ -159,6 +160,9 @@ button:hover {
 }
 
 @media (min-width: 64em) {
+  .hero {
+    padding-bottom: 0;
+  }
   section .container {
     display: -ms-grid;
     display: grid;
@@ -169,6 +173,7 @@ button:hover {
         grid-template-areas: "text image";
   }
   section .hero__image {
+    padding-top: 100px;
     position: relative;
     min-height: 658px;
     z-index: 999;
@@ -244,6 +249,9 @@ button:hover {
 }
 
 @media (min-width: 64em) {
+  .article-text {
+    height: 400px;
+  }
   .profile-grid {
     width: 100%;
     gap: 25px;
@@ -429,6 +437,12 @@ footer .copy-right p {
   }
   footer .about-us li {
     padding: 0;
+    white-space: nowrap;
+  }
+  footer .about-us ul {
+    display: -ms-grid;
+    display: grid;
+    gap: 20px;
   }
   footer .copy-right {
     white-space: nowrap;

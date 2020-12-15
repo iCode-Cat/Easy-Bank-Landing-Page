@@ -2,7 +2,7 @@
 
 .hero {
     &__image {
-        
+             
             position: relative;
             bottom: 132px;
             z-index: -1;
@@ -38,16 +38,28 @@
 
 //Medias
 @media (min-width: 64em){
+    .hero {
+        padding-bottom: 0;
+    }
     section {
+     
         .container {
+           
             display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: 1fr 1fr;
-            grid-template-areas: "text image" ;       }
+            grid-template-areas: "text image" ;
+           
+           
+        }
         .hero {
-                
+            
+           
             &__image {
+                // background-image: url('../images/bg-intro-desktop.svg');
+                padding-top: 100px;
                 position: relative;
+               
                 min-height: 658px;
                 z-index: 999;
                 img {

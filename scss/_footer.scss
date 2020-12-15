@@ -68,6 +68,11 @@ footer {
 
             li {
                 padding: 0;
+                white-space: nowrap;
+            }
+            ul {
+                display: grid;
+                gap: 20px;
             }
         }
         

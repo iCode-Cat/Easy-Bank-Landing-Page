@@ -50,6 +50,10 @@
 }
 
 @media (min-width: 64em){
+
+   .article-text {
+       height: 400px;
+   }
     .profile-grid {
         width: 100%;
         gap: 25px;
